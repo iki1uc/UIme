@@ -2,16 +2,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>UIme</title>
+<title>ROOT RASTER</title>
 <style>
 body { background:#000; color:#0f0; font-family:monospace; padding:20px; }
+a, button { color:#0f0; background:#111; border:1px solid #0f0; padding:6px 10px; text-decoration:none; margin:4px; display:inline-block; }
+#out { margin-top:20px; white-space:pre; }
 </style>
 </head>
 <body>
 
-<h2>UIme ONLINE</h2>
-<p>UI-Motor aktiv. Linie steht.</p>
+<h2>RASTER START</h2>
+
+<!-- Einstiegs-Punkte (Bewegung im Raster) -->
+<button onclick="setPoint('male')">male</button>
+<button onclick="setPoint('modi')">modi</button>
+<button onclick="setPoint('UIme')">UIme</button>
+<button onclick="setPoint('root')">root</button>
+
+<div id="out">bereit.</div>
+
+<script>
+function setPoint(name) {
+  document.getElementById('out').textContent =
+    'Einstiegspunkt: ' + name + '\nBewegung im Raster aktiv.';
+}
+</script>
 
 </body>
 </html>
-
