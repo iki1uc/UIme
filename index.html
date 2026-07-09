@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>UIme – ROOT RASTER</title>
+<title>UIme – 12ALL Raster</title>
 <style>
 body { background:#000; color:#0f0; font-family:monospace; padding:20px; }
-a, button { color:#0f0; background:#111; border:1px solid #0f0; padding:6px 10px; text-decoration:none; margin:4px; display:inline-block; }
+button { background:#111; border:1px solid #0f0; color:#0f0; padding:6px 12px; margin:6px; }
 #out { margin-top:20px; white-space:pre; }
 </style>
 </head>
 <body>
 
-<h2>UIme – RASTER START</h2>
+<h2>UIme – 12ALL Raster Einstieg</h2>
 
 <button onclick="setPoint('male')">male</button>
 <button onclick="setPoint('modi')">modi</button>
 <button onclick="setPoint('UIme')">UIme</button>
 <button onclick="setPoint('root')">root</button>
+<button onclick="setPoint('12ALL')">12ALL</button>
 
-<div id="out">bereit.</div>
+<div id="out">UIme bereit.</div>
 
 <script>
 function setPoint(name) {
   document.getElementById('out').textContent =
-    'Einstiegspunkt: ' + name + '\nRaster-Bewegung aktiv.';
+    'UIme-Einstiegspunkt: ' + name + '\n12ALL-Raster aktiv.';
 }
 </script>
 
